@@ -1,0 +1,123 @@
+{
+    "_topics": [
+        {
+            "_id": null,
+            "_text": "hermit",
+            "_type": "topic",
+            "_score": 0.343,
+            "_message_ids": [
+                "4591847318487040",
+                "6077742592819200",
+                "5358246919929856",
+                "4668063291539456",
+                "5627268722851840",
+                "4604927205179392",
+                "6560969799499776",
+                "5014885491015680",
+                "6132481179254784",
+                "6427731357597696",
+                "5768601013846016",
+                "5661894195544064",
+                "4685841436246016",
+                "5340002905489408",
+                "4762279036321792",
+                "5576153260097536",
+                "4541363119456256",
+                "5067091254706176",
+                "5258779772321792",
+                "4777199215837184",
+                "5257992266579968",
+                "4898741220278272",
+                "4651122715787264"
+            ],
+            "_entities": null,
+            "_sentiment": null,
+            "_parent_refs": [
+                {
+                    "_type": "topic",
+                    "_text": "warm blood",
+                    "discriminator": null
+                }
+            ],
+            "discriminator": null
+        },
+        {
+            "_id": null,
+            "_text": "blood",
+            "_type": "topic",
+            "_score": 0.691,
+            "_message_ids": [
+                "4762884291166208",
+                "5054121225224192",
+                "6747355374682112",
+                "5170862865514496",
+                "4651122715787264"
+            ],
+            "_entities": null,
+            "_sentiment": null,
+            "_parent_refs": [
+                {
+                    "_type": "topic",
+                    "_text": "warm blood",
+                    "discriminator": null
+                }
+            ],
+            "discriminator": null
+        },
+        {
+            "_id": null,
+            "_text": "warm blood",
+            "_type": "topic",
+            "_score": 0.768,
+            "_message_ids": [
+                "5054121225224192"
+            ],
+            "_entities": null,
+            "_sentiment": null,
+            "_parent_refs": [],
+            "discriminator": null
+        },
+        {
+            "_id": null,
+            "_text": "bandage",
+            "_type": "topic",
+            "_score": 0.493,
+            "_message_ids": [
+                "5054121225224192"
+            ],
+            "_entities": null,
+            "_sentiment": null,
+            "_parent_refs": [
+                {
+                    "_type": "topic",
+                    "_text": "warm blood",
+                    "discriminator": null
+                }
+            ],
+            "discriminator": null
+        },
+        {
+            "_id": null,
+            "_text": "strange",
+            "_type": "topic",
+            "_score": 0.418,
+            "_message_ids": [
+                "5776072881209344",
+                "4570238566268928",
+                "5838790543802368",
+                "6152924720267264"
+            ],
+            "_entities": null,
+            "_sentiment": null,
+            "_parent_refs": [
+                {
+                    "_type": "topic",
+                    "_text": "warm blood",
+                    "discriminator": null
+                }
+            ],
+            "discriminator": null
+        }
+    ],
+    "discriminator": null
+}
