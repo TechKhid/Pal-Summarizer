@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+    <script type = "text/javascript">
+               var ws = new WebSocket("wss://5cbc-41-218-222-7.eu.ngrok.io/");
+               ws.onopen = function() {  
+                alert("Message is sent...");
+               };
+
+				
+               ws.onmessage = function (evt) { 
+                  var received_msg = evt.data;
+                  alert("Message is received...");
+               };
+				
+               ws.onclose = function() {
+                  alert("Connection is closed..."); 
+               };
+            
+  
+      </script>
+</script>
+</html>

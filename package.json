@@ -1,0 +1,15 @@
+{
+    "dependencies": {
+        "@koa/router": "^11.0.1",
+        "@symblai/symbl-js": "^1.4.8",
+        "@vonage/cli": "^1.1.4",
+        "@vonage/server-sdk": "^2.11.2",
+        "@vonage/voice": "^0.2.3",
+        "dotenv": "^16.0.2",
+        "koa": "^2.13.4",
+        "koa-body": "^5.0.0",
+        "koa-views": "^8.0.0",
+        "koa-websocket": "^7.0.0",
+        "twig": "^1.15.4"
+    }
+}

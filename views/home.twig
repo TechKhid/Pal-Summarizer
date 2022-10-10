@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+            var websocket = new WebSocket('ws://localhost:3000/');
+            websocket.onopen = function(event) {
+                websocket.send(JSON.stringify({'event': 'webui:connect'}));
+            };
+            websocket.onmessage = function(event) {
+                console.log(event);
+                const elem = document.createElement("p");
+                elem.innerText = event.data;
+                document.getElementById("transcript").appendChild(elem);
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Real time transcription of a conversation</h1>
+
+        <div id="transcript">
+
+        </div>
+    </body>
+</html>
