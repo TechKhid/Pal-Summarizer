@@ -23,20 +23,40 @@
     <h1 style="text-align: center;color:aliceblue">Pal-Summarizer</h1>
    </div> 
    <div style="width: 100%;padding: 20px;">
-    <h3 style="text-align: center;">Constituent's FeedBack</h3>
+    <!-- <h3 style="text-align: center;">Constituent's FeedBack</h3> -->
    </div> 
+   <div class="container">
+    <div class="row"> 
+    <div class="nine columns"><h3 style="text-align: center;border: 1px solid;">Ranked Topics</h3>
+    <div id="ranked">
+
+    </div>
+    </div>
+    <div class="three columns"><h3 style="text-align: center;border: 1px solid;">List Of Topic</h3>
+        <div id="topics">
+ 
+        </div>
+    </div>
+</div>
+   </div>
 </body>
 
     <script type = "text/javascript">
+        let topic = [];
+        function append_to_div(div_name, data){
+            document.getElementById(div_name).innerText += data;
+        }
                var ws = new WebSocket("wss://5cbc-41-218-222-7.eu.ngrok.io/");
                ws.onopen = function() {  
-                alert("Message is sent...");
+                // alert("Message is sent...");
                };
 
 				
                ws.onmessage = function (evt) { 
                   var received_msg = evt.data;
-                  alert("Message is received...");
+                  topic.push(received_msg);
+                  append_to_div("topics", received_msg);
+                 
                };
 				
                ws.onclose = function() {
